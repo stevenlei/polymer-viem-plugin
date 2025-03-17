@@ -1,0 +1,55 @@
+{
+  "name": "polymer-viem",
+  "version": "1.0.0",
+  "description": "A plugin for Viem that adds Polymer proof capabilities, allowing you to generate and verify cross-chain transaction proofs.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "dev": "tsup src/index.ts --format esm --dts --watch",
+    "typecheck": "tsc --noEmit",
+    "receipt": "tsx examples/receipt.ts"
+  },
+  "keywords": [
+    "polymer",
+    "ethereum",
+    "viem",
+    "proof",
+    "blockchain",
+    "cross-chain"
+  ],
+  "author": "Polymer",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "peerDependencies": {
+    "viem": "^2.23.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "viem": "^2.23.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenlei/polymer-viem-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stevenlei/polymer-viem-plugin/issues"
+  },
+  "homepage": "https://github.com/stevenlei/polymer-viem-plugin#readme"
+}
